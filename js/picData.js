@@ -3,7 +3,7 @@
 let picData = [
     {
         no: '01',
-        url: 'media/img/C01.png',
+        url: "media/img/C01.png",
         title: '微批次',
         txt_1: '我們以微批次精選生豆為基礎，追求每個產區或莊園的獨特風味，確保每一杯都是獨一無二的咖啡體驗。'
     },
