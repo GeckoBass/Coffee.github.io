@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whimsy Cafe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/design.css">
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/b624147f93.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery.color-2.2.0.min.js"></script>
+    <script src="js/jquery.easing.1.4.js"></script>
+</head>
+<style>
+    html{
+        scroll-behavior: smooth;
+    }
+</style>
+
+<body>
+    <header id="title_2">
+        <div class="d-flex wrap f-space-between">
+            <div id="logo" class="grid-10 grid-m-4 text-center">
+                <a href="/index.html">
+                    <img src="/media/img/cafelogo.png" height="55px" alt="" class="text-center">
+                </a>
+            </div>
+            <menu class="grid-12 grid-m-8 d-none dm-block ">
+                <ul class="grid-12 d-block dm-flex f-center">
+                    <li><a href="/about.html" class="d-block">關於我們</a></li>
+                    <li><a href="/news.html" class="d-block">最新消息</a></li>
+                    <li><a href="/service.html" class="d-block">商業訂購</a></li>
+                </ul>
+            </menu>
+
+        </div>
+        <nav class="dm-none">
+            <div class="nav-t"></div>
+            <div class="nav-m"></div>
+            <div class="nav-b"></div>
+        </nav>
+    </header>
+    <main id="main_2">
+        <div class="d-flex wrap f-center text-center p-relative align-center">
+            <video class="p-absolute" src="/media/video/main02.mp4" width="100%" autoplay muted loop
+                playsinline></video>
+    </main>
+    <article id="about_1" class="p-relative">
+        <div class="p-absolute d-block dm-none"></div>
+        <div class="d-flex wrap f-center">
+            <div class="grid-11 grid-m-8 grid-l-9">
+                <h2>關於我們</h2>
+                <p>歡迎來到 Whimsy Cafe，我們是您尋找獨特咖啡體驗的最佳選擇。我們的使命是透過創意、精湛的烘焙工藝和對咖啡的熱愛，為您呈現令人驚艷的口感和風味。</p>
+                <h3>咖啡的奇幻世界</h3>
+                <p>在 Whimsy Cafe，我們相信咖啡不僅僅是一種飲品，更是一場奇幻的文青之旅。我們以新鮮現烘的咖啡豆為基礎，強調各個產區的風味，帶您穿越咖啡的多樣性世界。無論是來自耶加雪菲的清新花果香，還是來自哥倫比亞的巧克力堅果風味，每一杯都是一次獨特的旅程。</p>
+                <h3>咖啡師的匠心之作</h3>
+                <p>我們的咖啡師是熱情而專業的藝術家，他們將創意和技巧融入每一杯咖啡的調製中，如同每本文青書籍中的精彩段落。無論您是追求經典的拿鐵，還是嚮往創新的手沖，我們都將為您打造一份完美的咖啡體驗，猶如每部電影中的精彩片段。</p>
+                <h3>創新的咖啡文化</h3>
+                <p>Whimsy Cafe 是一個充滿創意和活力的文青社群，我們舉辦各種咖啡相關的活動和工作坊，如同書店裡的閱讀分享會，讓您深入了解咖啡的世界。我們相信分享知識和經驗是豐富咖啡文化的重要一環。</p>
+                <p>感謝您選擇 Whimsy Cafe，讓我們一同在書香和電影的世界中，沉浸在咖啡的美好韻味！</p>
+            </div>
+            <div class="grid-12 grid-m-7"></div>
+        </div>
+        
+    </article>
+    <footer id="end_2">
+        <div class="bg_1">
+            <div class="d-flex wrap align-center f-center text-left">
+                <div class="grid-10 grid-m-4">
+                    <img src="/media/img/cafelogo.png" alt="">
+                </div>
+                <div class="grid-10 grid-m-4">
+                    <div class="fa-solid fa-location-dot"> 231新北市新店區光明街000號</div><br>
+                    <div class="fa-solid fa-phone"> 022765-4321</div><br>
+                    <div class="fa-solid fa-envelope"> abcdefg@gmail.com</div>
+                </div>
+                <div class="grid-10 grid-m-3 d-flex wrap f-center">
+                    <div>
+                        <a class="fa-brands fa-facebook"></a>
+                        <a class="fa-brands fa-x-twitter"></a>
+                        <a class="fa-brands fa-instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-12 Copyright">
+                Copyright © <span id="nowYear"></span> XiaoFu-Whimsy Cafe. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <div id="goTop" class="btn_2_top">
+        <p>TOP</p>
+    </div>
+</body>
+
+</html>
+<script src="js/main.js"></script>
+<script>
+//年份更新
+function getYear() {
+    let d = new Date();
+    let fullYear = d.getFullYear();
+    let year_1 = document.querySelector('#nowYear');
+    year_1.innerHTML = fullYear;
+};
+getYear();
+
+</script>
