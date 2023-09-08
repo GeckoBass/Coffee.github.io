@@ -43,7 +43,7 @@
   z-index: 100;
   border: 2px solid var(--alphaWhite);
   background: rgba(255, 255, 255, 0.1725490196);
-  padding: 17px 10px 27px 0px;
+  padding: 17px 10px 20px 0px;
   cursor: pointer;
   transition: all 0.5s linear;
 }
@@ -203,7 +203,7 @@ header *[class^=nav] {
   z-index: -1;
   -o-object-fit: cover;
      object-fit: cover;
-  filter: brightness(0.3);
+  filter: brightness(0.5);
 }
 [id^=main] .d-flex .grid-10 {
   margin: 1em auto;
